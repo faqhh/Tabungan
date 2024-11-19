@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabungan Form</title>
+    <link rel="stylesheet" href="css/formpribadi.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <img src="img/logo.png" alt="Logo" class="logo">
+        <nav class="navigation">
+            <a href="home.html" class="active">Home</a>
+            <a href="#" class="navigation-link dropdown-toggle" data-bs-toggle="dropdown">Tabungan</a>
+            <div class="dropdown-menu fade-up m-0">
+                <a href="formbersama.html" class="dropdown-item">Tabungan Bersama</a>
+                <a href="formpribadi.html" class="dropdown-item">Tabungan Mandiri</a>
+            </div>
+            <a href="keuangan.html">Keuangan</a>
+            <a href="Artikel.html">Artikel</a>
+            <a href="profil.html"><button class="profile">Profile</button></a>
+        </nav>
+    </header>
+
+    <section>
+        <div class="main-container">
+            <div class="form-container">
+                <h2>Ayoo buat tabungan untuk dirimu dimasa depan!</h2>
+                <form class="savings-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Judul</label>
+                            <input type="text" placeholder="Ketik judul di sini yaa">
+                        </div>
+                        <div class="form-group">
+                            <label>Target</label>
+                            <input type="text" placeholder="Rp">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Jenis Tabungan</label>
+                        <div class="select-box">Bersama</div>
+                    </div>
+                    <div class="form-group">
+                        <label>Tanggal Awal Setor</label>
+                        <input type="date" value="2024-10-24">
+                    </div>
+                    <div class="form-group frequency">
+                        <label>Frekuensi Setor</label>
+                        <div class="frequency-options">
+                            <button type="button">Harian</button>
+                            <button type="button" class="active">Mingguan</button>
+                            <button type="button">Bulanan</button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Tanggal Akhir Setor</label>
+                        <input type="date" value="2024-10-24">
+                    </div>
+                    <div class="form-group">
+                        <label>Nominal Setor</label>
+                        <input type="text" placeholder="Rp.">
+                    </div>
+                    <div class="form-group">
+                        <label>Unggah Gambar</label>
+                        <button class="upload-btn">Pilih File</button>
+                    </div>
+                    <div class="form-group">
+                        <label>Undang Teman</label>
+                        <input type="text" placeholder="Ketik username di sini yaa">
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" class="cancel">Batal</button>
+                        <a href="list.html"><button type="submit" class="save">Simpan</button></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="js/formpribadi.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Tabungan</title>
+    <link rel="stylesheet" href="css/tabunganp.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="img/logo.png" alt="Logo" class="logo">
+        <nav class="navigation">
+            <a href="home.html" class="active">Home</a>
+            <a href="#" class="navigation-link dropdown-toggle" data-bs-toggle="dropdown">Tabungan</a>
+            <div class="dropdown-menu fade-up m-0">
+                <a href="formbersama.html" class="dropdown-item">Tabungan Bersama</a>
+                <a href="formpribadi.html" class="dropdown-item">Tabungan Mandiri</a>
+            </div>
+            <a href="keuangan.html">Keuangan</a>
+            <a href="Artikel.html">Artikel</a>
+            <a href="profil.html"><button class="profile">Profile</button></a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="edit-tabungan-container">
+            <div class="back-button">⬅️</div>
+
+            <h1>Macbook</h1>
+
+            <div class="form-container">
+                <div class="image-section">
+                    <img src="img/macbook.jpg" alt="Macbook" class="tabungan-image">
+                    <button class="lihat-tabungan">Lihat Tabungan</button>
+                </div>
+
+                <div class="form-section">
+                    <div class="form-group">
+                        <label>Judul</label>
+                        <input type="text" value="Macbook">
+                    </div>
+                    <div class="form-group">
+                        <label>Target</label>
+                        <input type="text" value="Rp 30.000.000">
+                    </div>
+                    <div class="form-group">
+                        <label>Nominal Setor</label>
+                        <input type="text" value="Rp 100.000">
+                    </div>
+                    <div class="form-group">
+                        <label>Tanggal Awal Setor</label>
+                        <input type="date" value="2024-10-30">
+                    </div>
+
+                    <div class="form-group frekuensi">
+                        <button class="frekuensi-btn">Harian</button>
+                        <button class="frekuensi-btn active">Mingguan</button>
+                        <button class="frekuensi-btn">Bulanan</button>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Tanggal Akhir Setor</label>
+                        <input type="date" value="2030-05-30">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Unggah Gambar</label>
+                        <input type="file">
+                    </div>
+
+                    <div class="form-actions">
+                        <button class="btn batal">Batal</button>
+                        <button class="btn simpan">Simpan</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/tabungan.js"></script>
+
+</body>
+
+</html>
